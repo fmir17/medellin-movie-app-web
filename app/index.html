@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app ="MyFirstApp">
+<head>
+	<title> Medellin-Movie-App-Web</title>
+	<link rel="stylesheet" href="css/app.css"/>
+</head>
+<body ng-controller="FirstController">
+<div class="row-fluid">
+    <div class="span2">     
+    </div>
+    <div class="span10">
+       <form name="Form1">
+
+       <p align="center"><img src="imagenes/logo.png" alt="logo" width="800" height="200" border="4"></p>
+       <table border="0" style="width: 900px"  class="wrapper">
+        <tr>
+          <td >Ingrese Información De la Pelicula&nbsp;</td>
+        </tr>
+        <tr>
+          <td >Id: &nbsp;</td>
+          <td ><input id="id" type="text" name="id" maxlength="16" ng-model="posts.id"  required>&nbsp;  </td>          
+          <td align="center"></td>
+          <td>Title: &nbsp;</td>
+          <td ><input id="title" type="text" name="title" ng-model="posts.title"  required>&nbsp;  </td>
+        </tr>
+        <tr>
+          <td >Duración: &nbsp;</td>
+          <td ><input id="duration" type="text" name="duration" maxlength="16" ng-model="posts.duration"  required>&nbsp;  </td>          
+          <td align="center"></td>
+          <td>Genero: &nbsp;</td>
+          <td ><input id="genre" type="text" name="genre" ng-model="posts.genre"  required>&nbsp;  </td>
+        </tr>
+        <tr>
+          <td >Formato: &nbsp;</td>
+          <td ><input id="format" type="text" name="format" maxlength="16" ng-model="posts.fomart"  required>&nbsp;  </td>          
+          <td align="center"></td>
+          <td>Director: &nbsp;</td>
+          <td ><input id="director" type="text" name="director" ng-model="posts.director"  required>&nbsp;  </td>
+        </tr>
+        <tr>
+          <td >Reparto: &nbsp;</td>
+          <td ><input id="cast" type="text" name="cart" maxlength="16" ng-model="posts.cast"  required>&nbsp;  </td>          
+          <td align="center"></td>
+          <td>URL Imagen: &nbsp;</td>
+          <td ><input id="urlImage" type="text" name="urlImage" ng-model="posts.urlImage"  required>&nbsp;  </td>
+        </tr>
+        <tr>
+          <td >urlVideo: &nbsp;</td>
+          <td ><input id="urlVideo" type="text" name="urlVideo" maxlength="16" ng-model="posts.urlVideo"  required>&nbsp;  </td>          
+        </tr>
+        <tr>
+          <td >Descripción: &nbsp;</td>
+          <td ><textArea rows="6" cols="25" id="description" type="textArea" name="description" maxlength="16" ng-model="posts.description"  required></textArea>
+        </tr>
+        <tfoot>
+          <tr>
+            <td colspan="6" align = "center" ><input type='button'  value='guardarPelicula' ng-click="guardarIncidente()"/></td>
+          </tr>
+        </tfoot>      
+      </table>
+      </form>
+</form> 
+  </div>
+</div>
+  <!-- Agregamos angular -->
+<script src="lib/angular.js"></script>
+  <!-- Importamos los archivos extras que vamos a usar -->
+ <script src="js/app.js"></script>
+<!-- se incluye el controller como parte del body para que las variables sean visibles -->
+ <script src="js/controller.js"></script> 
+
+</body>
+</html>

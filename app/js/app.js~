@@ -1,0 +1,15 @@
+'use strict';
+
+var aplicacion = angular.module('MyFirstApp', ['ngRoute']);
+
+aplicacion.config(['$routeProvider',
+  function($routeProvider) {
+    $routeProvider.
+      when('/index', {
+        templateUrl: '/index',
+        controller: 'controller.js'
+      }).
+      otherwise({
+        redirectTo: '/index'
+      });
+  }])

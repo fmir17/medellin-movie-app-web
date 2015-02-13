@@ -1,0 +1,13 @@
+body{
+	font-family: sans-serif;
+	font-weight: 100;
+	background: #ccc
+}
+.wrapper{
+	width: 650px;
+	margin: 0 auto;
+	box-shadow: 5px 5px 5px #555;
+	background: #fff;
+	border-radius: 15px;
+	padding: 10px;
+}
