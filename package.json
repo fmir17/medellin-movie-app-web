@@ -1,29 +1,21 @@
 {
   "name": "medellin-movie-app-WEB",
   "version": "1.0.0",
-  "description": "Aplicativo web para alimentar API de medellin-movie-api",
-  "main": "web-server.js",
+  "engines": {
+    "node": "4.4.7",
+    "npm": "2.15.8"
+  },
+  "description": "Aplicativo web para alimentar API de medellin-movie-app",
+  "scripts": {
+    "test": "mocha",
+    "start":"node web-server.js"  
+  },
+  "license": "ISC",
   "dependencies": {
-    "express": "^3.4.8",
-    "mongoose": "^3.8.0"
+    "express": "^3.4.8"
   },
   "devDependencies": {
     "mocha": "^1.13.0"
   },
-  "scripts": {
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "keywords": [
-    "node"
-  ],
-  "author": "Fredy Miranda, Sebastian Garcia",
-  "license": "MIT",
-  "bugs": {
-    "url": ""
-  },
-  "homepage": ""
+  "repository": {  }
 }
